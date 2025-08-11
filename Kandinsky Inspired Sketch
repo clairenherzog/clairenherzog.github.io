@@ -1,0 +1,51 @@
+function setup() {
+  createCanvas(windowWidth, windowHeight);
+  colorMode(HSB, 360, 100, 100, 100);
+  noStroke();
+}
+
+function draw() {
+  background(220, 20, 95);
+
+  // Animated abstract shapes
+  let t = millis() * 0.001;
+
+  // Random moving circles
+  for (let i = 0; i < 10; i++) {
+    let x = noise(i * 0.3, t * 0.2) * width;
+    let y = noise(i * 0.5 + 100, t * 0.25) * height;
+    let r = noise(i * 0.8, t * 0.15) * 200 + 50;
+    fill((i * 36 + t * 50) % 360, 80, 90, 80);
+    ellipse(x, y, r);
+  }
+
+  // Rotating rectangles
+  push();
+  translate(width / 2, height / 2);
+  rotate(t * 0.2);
+  for (let i = 0; i < 6; i++) {
+    push();
+    rotate(i * PI / 3 + t);
+    fill((i * 60 + t * 40) % 360, 70, 90, 90);
+    rect(100, 0, 200, 40);
+    pop();
+  }
+  pop();
+
+  // Wavy lines
+  strokeWeight(3);
+  for (let y = 0; y < height; y += 60) {
+    beginShape();
+    for (let x = 0; x < width; x += 20) {
+      let yOff = sin(t * 2 + x * 0.05 + y * 0.02) * 20;
+      stroke((x * 0.5 + y * 0.2 + t * 80) % 360, 80, 80, 90);
+      vertex(x, y + yOff);
+    }
+    endShape();
+  }
+  noStroke();
+}
+
+function windowResized() {
+  resizeCanvas(windowWidth, windowHeight);
+}
