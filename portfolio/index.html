@@ -11,7 +11,23 @@
         font-size: 2.5em;
       }
       .project {
-        margin: 20px;
+        margin: 40px 0;
+      }
+      /* Make embedded videos responsive */
+      .video-wrapper {
+        position: relative;
+        padding-bottom: 56.25%; /* 16:9 aspect ratio */
+        height: 0;
+        overflow: hidden;
+        max-width: 100%;
+      }
+      .video-wrapper iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: 0;
       }
     </style>
   </head>
@@ -21,14 +37,17 @@
 
     <div class="project">
       <h2>enter the void</h2>
-      <p>Nietzche once said, "...if you gaze for long into an abyss, the abyss gazes also into you."</p>
-     <div style="padding:45.75% 0 0 0;position:relative;"> 
-       <iframe src="https://player.vimeo.com/video/1110412568"
-         width="640" height="360"
-         frameborder="0"
-         allow="autoplay; fullscreen; picture-in-picture"
-         allowfullscreen>
-       </iframe>
+      <p>Nietzsche once said, "...if you gaze for long into an abyss, the abyss gazes also into you."</p>
+
+      <!-- Vimeo video embedded responsively -->
+      <div class="video-wrapper">
+        <iframe src="https://player.vimeo.com/video/1110412568"
+                frameborder="0"
+                allow="autoplay; fullscreen; picture-in-picture"
+                allowfullscreen
+                title="Enter the Void">
+        </iframe>
+      </div>
     </div>
 
     <div class="project">
