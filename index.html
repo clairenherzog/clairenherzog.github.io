@@ -26,20 +26,18 @@
     </p>
 
     <script src="Kandinsky Inspired Sketch"></script>
- <script>
+   <script>
   window.onload = function() {
     const intro = document.querySelector('.intro');
     const words = intro.innerText.split(' ');
 
-    // Arrays of random styles
     const fonts = ["Georgia", "Arial Black", "Courier New", "Times New Roman", "Verdana", "Impact", "Comic Sans MS"];
     const colors = ["#000000", "#111111", "#222222", "#444444", "#663399", "#990000", "#003366"];
 
-    // Build styled words
     intro.innerHTML = words.map(word => {
       const font = fonts[Math.floor(Math.random() * fonts.length)];
       const color = colors[Math.floor(Math.random() * colors.length)];
-      const rotation = (Math.random() * 10 - 5).toFixed(1); // -5deg to +5deg
+      const rotation = (Math.random() * 10 - 5).toFixed(1);
       return `<span style="
         font-family:${font};
         color:${color};
@@ -47,7 +45,7 @@
       ">${word}</span>`;
     }).join(' ');
   };
-</script>
+   </script>
   </body>
 </html>
 
