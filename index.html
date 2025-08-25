@@ -6,50 +6,50 @@
   </head>
   <body>
     <h1>clairenherzog</h1>
-<p class="intro">
-  is itching to create. 
-  She is a recent graduate of UC Santa Barbara with a major in 
-  Film and Media Studies and a minor in Media, Art, and Technology. 
-  She is currently honing her skills in web design and motion design 
-  using TouchDesigner, Figma, and Adobe After Effects. She is also learning 
-  the basics of coding with JavaScript, HTML, and CSS, with the goal of improving 
-  her interactive, transdisciplinary art abilities. She is innately drawn to the
-  spaces in between disciplines, selfhoods, and beliefs where she is convinced the 
-  best ideas thrive. She is passionate about how these intersections both reflect 
-  and inform the human condition, and this passion is the thread that connects 
-  her creative journey so far.  
-</p>
+    <p class="intro">
+      is itching to create. 
+      She is a recent graduate of UC Santa Barbara with a major in 
+      Film and Media Studies and a minor in Media, Art, and Technology. 
+      She is currently honing her skills in web design and motion design 
+      using TouchDesigner, Figma, and Adobe After Effects. She is also learning 
+      the basics of coding with JavaScript, HTML, and CSS, with the goal of improving 
+      her interactive, transdisciplinary art abilities. She is innately drawn to the
+      spaces in between disciplines, selfhoods, and beliefs where she is convinced the 
+      best ideas thrive. She is passionate about how these intersections both reflect 
+      and inform the human condition, and this passion is the thread that connects 
+      her creative journey so far.  
+    </p>
 
-<!-- Portfolio button using image -->
-<p style="text-align: center; margin-top: 10px;">
-  <a href="portfolio/" target="_blank">
-    <img src="button!.png" alt="Portfolio Button" style="width: 100px; height: 100px; display: block; margin: 0 auto;">
-  </a>
-  <span style="display: block; margin-top: 10px; font-size: 16px; color: #663399; font-weight: bold;">
-    click to see my portfolio
-  </span>
-</p>
+    <!-- Portfolio button using image -->
+    <p style="text-align: center; margin-top: 5px;">
+      <a href="portfolio/" target="_blank">
+        <img src="button!.png" alt="Portfolio Button" style="width: 100px; height: 100px; display: block; margin: 0 auto;">
+      </a>
+      <span style="display: block; margin-top: 5px; font-size: 16px; color: #663399; font-weight: bold;">
+        click to see my portfolio
+      </span>
+    </p>
 
     <script src="Kandinsky Inspired Sketch"></script>
-   <script>
-  window.onload = function() {
-    const intro = document.querySelector('.intro');
-    const words = intro.innerText.split(' ');
+    <script>
+      window.onload = function() {
+        const intro = document.querySelector('.intro');
+        const words = intro.innerText.split(' ');
 
-    const fonts = ["Georgia", "Arial Black", "Courier New", "Times New Roman", "Verdana", "Impact", "Comic Sans MS"];
-    const colors = ["#000000", "#111111", "#222222", "#444444", "#663399", "#990000", "#003366"];
+        const fonts = ["Georgia", "Arial Black", "Courier New", "Times New Roman", "Verdana", "Impact", "Comic Sans MS"];
+        const colors = ["#000000", "#111111", "#222222", "#444444", "#663399", "#990000", "#003366"];
 
-    intro.innerHTML = words.map(word => {
-      const font = fonts[Math.floor(Math.random() * fonts.length)];
-      const color = colors[Math.floor(Math.random() * colors.length)];
-      const rotation = (Math.random() * 10 - 5).toFixed(1);
-      return `<span style="
-        font-family:${font};
-        color:${color};
-        transform: rotate(${rotation}deg);
-      ">${word}</span>`;
-    }).join(' ');
-  };
-   </script>
+        intro.innerHTML = words.map(word => {
+          const font = fonts[Math.floor(Math.random() * fonts.length)];
+          const color = colors[Math.floor(Math.random() * colors.length)];
+          const rotation = (Math.random() * 10 - 5).toFixed(1);
+          return `<span style="
+            font-family:${font};
+            color:${color};
+            transform: rotate(${rotation}deg);
+          ">${word}</span>`;
+        }).join(' ');
+      };
+    </script>
   </body>
 </html>
