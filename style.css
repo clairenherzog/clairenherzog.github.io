@@ -16,6 +16,9 @@ html, body {
   background: #fdfdfd; /* paper-like background */
 }
 
+h1 {
+  text-align: center;
+}
  .intro {
   display: flex;
   flex-wrap: wrap;
