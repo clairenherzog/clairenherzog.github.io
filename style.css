@@ -111,3 +111,26 @@ h1 {
   color: #ffccff;     /* light purple hover effect */
 }
 
+/* Reduce spacing between header and intro */
+h1 {
+  text-align: center;
+  margin-bottom: 10px; /* smaller gap below the title */
+}
+
+.intro {
+  padding: 10px 20px;  /* less padding around intro text */
+  margin-top: 0;       /* no extra gap above */
+  margin-bottom: 20px; /* small gap before next section */
+}
+
+
+.portfolio-section {
+  text-align: center;
+  margin-top: 10px; /* tighten gap above */
+  margin-bottom: 20px; /* small gap before sketch */
+}
+
+canvas {
+  display: block;
+  margin: 20px auto; /* center and add small space */
+}
