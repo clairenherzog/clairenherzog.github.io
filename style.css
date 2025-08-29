@@ -42,7 +42,11 @@ h1 {
 }
   
 
-/* Auto-random variation using nth-child selectors */
+.intro {
+  padding: 10px 20px;  /* less padding around intro text */
+  margin-top: 0;       /* no extra gap above */
+  margin-bottom: 20px; /* small gap before next section */
+}
 .intro span:nth-child(2n) {
   background: #f1f1f1;
   font-family: Arial, sans-serif;
@@ -59,6 +63,12 @@ h1 {
   background: #fafafa;
   font-family: Georgia, serif;
   transform: rotate(1deg);
+}
+
+.portfolio-section {
+  text-align: center;
+  margin-top: 10px; /* tighten gap above */
+  margin-bottom: 20px; /* small gap before sketch */
 }
 
 .portfolio-button {
@@ -115,19 +125,6 @@ h1 {
 h1 {
   text-align: center;
   margin-bottom: 10px; /* smaller gap below the title */
-}
-
-.intro {
-  padding: 10px 20px;  /* less padding around intro text */
-  margin-top: 0;       /* no extra gap above */
-  margin-bottom: 20px; /* small gap before next section */
-}
-
-
-.portfolio-section {
-  text-align: center;
-  margin-top: 10px; /* tighten gap above */
-  margin-bottom: 20px; /* small gap before sketch */
 }
 
 canvas {
