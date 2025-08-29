@@ -81,9 +81,9 @@ h1 {
 .sticky-header {
   position: sticky;
   top: 0;
-  background: white; /* change to your background color */
-  border-bottom: 2px solid #663399;
-  padding: 10px 0;
+  width: 100%;
+  background: #663399; /* purple fill */
+  padding: 15px 0;
   z-index: 1000;
 }
 
@@ -96,17 +96,17 @@ h1 {
 }
 
 .sticky-header nav ul li {
-  margin: 0 20px;
+  margin: 0 30px;
 }
 
 .sticky-header nav ul li a {
   text-decoration: none;
   font-weight: bold;
-  color: #663399;
+  color: white;       /* white text for contrast */
   font-size: 18px;
   transition: color 0.3s;
 }
 
 .sticky-header nav ul li a:hover {
-  color: #990000;
+  color: #ffccff;     /* light pink/purple hover effect */
 }
