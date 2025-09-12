@@ -139,8 +139,8 @@ h1 {
 
 /* --- ADD VIDEO STYLES HERE --- */
 .video-wrapper {
-  width: 480px;
-  height: 270px;
+  width: 960px;
+  height: 540px;
   margin: 0 auto 24px auto;
   position: relative;
   overflow: hidden;
@@ -151,14 +151,14 @@ h1 {
   position: absolute;
   top: 0;
   left: 0;
-  width: 480px;
-  height: 270px;
+  width: 960px;
+  height: 540px;
   border: 0;
 }
 
 video {
-  width: 480px;
-  height: 270px;
+  width: 960px;
+  height: 540px;
   display: block;
   margin: 0 auto 24px auto;
   background: #000;
