@@ -1,14 +1,14 @@
+a {
+  display: inline-block;
+  margin-top: 20px;
+  font-size: 1.2em;
+  text-decoration: none;
+  color: purple;
+}
+a:hover {
+  text-decoration: underline;
+}
 
-      a {
-        display: inline-block;
-        margin-top: 20px;
-        font-size: 1.2em;
-        text-decoration: none;
-        color: purple;
-      }
-      a:hover {
-        text-decoration: underline;
-      }
 html, body {
   height: 100%;
   margin: 0;
@@ -18,16 +18,21 @@ html, body {
 
 h1 {
   text-align: center;
+  margin-bottom: 10px; /* smaller gap below the title */
 }
- .intro {
+
+/* --- INTRO SECTION --- */
+.intro {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-content: center;
   height: 100%;
   width: 100%;
-  padding: 40px;
+  padding: 10px 20px;      /* less padding around intro text */
   box-sizing: border-box;
+  margin-top: 0.1em;       /* custom margin above */
+  margin-bottom: 0.3em;    /* custom margin below */
 }
 
 .intro span {
@@ -40,13 +45,7 @@ h1 {
   box-shadow: 2px 2px 0px rgba(0,0,0,0.25);
   transform-origin: center;
 }
-  
 
-.intro {
-  padding: 10px 20px;  /* less padding around intro text */
-  margin-top: 0;       /* no extra gap above */
-  margin-bottom: 20px; /* small gap before next section */
-}
 .intro span:nth-child(2n) {
   background: #f1f1f1;
   font-family: Arial, sans-serif;
@@ -65,9 +64,10 @@ h1 {
   transform: rotate(1deg);
 }
 
+/* --- PORTFOLIO SECTION --- */
 .portfolio-section {
   text-align: center;
-  margin-top: 10px; /* tighten gap above */
+  margin-top: 10px;  /* tighten gap above */
   margin-bottom: 20px; /* small gap before sketch */
 }
 
@@ -88,6 +88,7 @@ h1 {
   transform: scale(1.05);
 }
 
+/* --- STICKY HEADER --- */
 .sticky-header {
   position: sticky;
   top: 0;
@@ -121,12 +122,7 @@ h1 {
   color: #ffccff;     /* light purple hover effect */
 }
 
-/* Reduce spacing between header and intro */
-h1 {
-  text-align: center;
-  margin-bottom: 10px; /* smaller gap below the title */
-}
-
+/* --- CANVAS --- */
 canvas {
   display: block;
   margin: 20px auto; /* center and add small space */
