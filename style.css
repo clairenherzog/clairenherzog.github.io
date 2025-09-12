@@ -27,21 +27,20 @@ h1 {
   flex-wrap: wrap;
   justify-content: center;
   align-content: flex-start;
-  width: auto;
-  padding: 0 2px;  
+  max-width: 700px;        
+  margin: 2em auto;       
+  padding: 0 2em;          
   box-sizing: border-box;
-  margin-top: 0.1em;       
-  margin-bottom: 0.3em;   
-}
+  line-height: 2;         
 
 .intro span {
   display: inline-block;
   background: white;
   border: 1px solid black;
-  padding: 3px 6px;
-  margin: 1px;
-  font-size: 1.1em;
-  box-shadow: 1px 1px 0px rgba(0,0,0,0.25);
+  padding: 6px 12px;      
+  margin: 6px 4px;        
+  font-size: 1.15em;
+  box-shadow: 1px 1px 0px rgba(0,0,0,0.22);
   transform-origin: center;
 }
 
