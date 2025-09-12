@@ -26,23 +26,22 @@ h1 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-content: center;
-  height: 100%;
-  width: 100%;
-  padding: 10px 20px;      /* less padding around intro text */
+  align-content: flex-start;
+  width: auto;
+  padding: 0 2px;  
   box-sizing: border-box;
-  margin-top: 0.1em;       /* custom margin above */
-  margin-bottom: 0.3em;    /* custom margin below */
+  margin-top: 0.1em;       
+  margin-bottom: 0.3em;   
 }
 
 .intro span {
   display: inline-block;
   background: white;
   border: 1px solid black;
-  padding: 8px 12px;
-  margin: 6px;
-  font-size: 1.4em;
-  box-shadow: 2px 2px 0px rgba(0,0,0,0.25);
+  padding: 3px 6px;
+  margin: 1px;
+  font-size: 1.1em;
+  box-shadow: 1px 1px 0px rgba(0,0,0,0.25);
   transform-origin: center;
 }
 
