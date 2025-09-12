@@ -78,7 +78,7 @@ p {
 .portfolio-button {
   display: inline-block;
   padding: 12px 24px;
-  background-color: white; /* purple button */
+  background-color: #663399; /* purple button */
   color: white;
   font-size: 16px;
   font-weight: bold;
