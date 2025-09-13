@@ -175,6 +175,14 @@ video {
   background: #000;
 }
 
+  .copyright {
+  color: white;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 10px;
+  font-size: 1em;
+}
+
 canvas {
   display: block;
   margin: 20px auto; /* center and add small space */
