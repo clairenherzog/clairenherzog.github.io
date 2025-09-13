@@ -13,6 +13,9 @@ html, body {
   height: 100%;
   margin: 0;
   padding: 0;
+}
+
+body.home {
   background: url('portfoliobackdrop.png');
   background-size: cover;
 }
