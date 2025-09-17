@@ -27,15 +27,12 @@ p {
 }
 
 .intro {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 200px;
-  max-width: 95vw;        
-  margin: 2em auto;      
-  padding: 0 1em;          
-  box-sizing: border-box;
-  line-height: 1.5;         
+  max-width: 500px;        /* limit how wide the text can get */
+  margin: 2em auto;        /* center it horizontally */
+  padding: 0 1em;          /* a little side padding */
+  line-height: 1.6;        /* more breathing room between lines */
+  text-align: left;        /* make it read like normal text */
+}       
 
 .intro span {
   display: inline-block;
