@@ -21,7 +21,6 @@ h1 {
   margin-bottom: 10px;
   font-size: 2.2em; 
   color: black;
-}  /* ✅ missing brace fixed */
 
 p {
   margin: 0.5em 0;
@@ -37,7 +36,6 @@ p {
   padding: 0 1em;          
   box-sizing: border-box;
   line-height: 1.5;         
-}  /* ✅ missing brace fixed */
 
 .intro span {
   display: inline-block;
@@ -117,16 +115,33 @@ p {
 .sticky-header nav ul li a {
   text-decoration: none;
   font-weight: bold;
-  color: black;
+  color: black;       /* white text for contrast */
   font-size: 18px;
   transition: color 0.3s;
 }
 
 .sticky-header nav ul li a:hover {
-  color: #ffccff;
+  color: #ffccff;     /* light purple hover effect */
 }
+/* ... your previous CSS ... */
 
-/* --- VIDEO STYLES --- */
+.intro { ... }
+.intro span { ... }
+.intro span:nth-child(2n) { ... }
+.intro span:nth-child(3n) { ... }
+.intro span:nth-child(5n) { ... }
+
+.portfolio-section { ... }
+.portfolio-button { ... }
+.portfolio-button:hover { ... }
+
+.sticky-header { ... }
+.sticky-header nav ul { ... }
+.sticky-header nav ul li { ... }
+.sticky-header nav ul li a { ... }
+.sticky-header nav ul li a:hover { ... }
+
+/* --- ADD VIDEO STYLES HERE --- */
 .video-wrapper {
   position: relative;
   padding-bottom: 56.25%;
@@ -134,6 +149,7 @@ p {
   overflow: hidden;
   max-width: 1200px;
   margin: 0 auto 40px auto;
+  position: relative;
   background: #000;
 }
 
@@ -154,10 +170,9 @@ video {
   background: #000;
 }
 
-/* --- COPYRIGHT --- */
-.copyright {
+  .copyright {
   color: white;
-  text-align: center;  
+  text-align: center;
   margin-top: 40px;
   margin-bottom: 10px;
   font-size: 1em;
@@ -165,5 +180,5 @@ video {
 
 canvas {
   display: block;
-  margin: 20px auto;
+  margin: 20px auto; /* center and add small space */
 }
