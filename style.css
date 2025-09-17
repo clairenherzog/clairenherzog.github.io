@@ -15,11 +15,6 @@ html, body {
   padding: 0;
 }
 
-body.home {
-  background: url('portfoliobackdrop.png');
-  background-size: cover;
-}
-
 h1 {
   text-align: center;
   margin-top: 24px;
