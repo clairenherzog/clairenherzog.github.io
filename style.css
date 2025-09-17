@@ -120,7 +120,7 @@ p {
 .sticky-header nav ul li a {
   text-decoration: none;
   font-weight: bold;
-  color: white;       /* white text for contrast */
+  color: black;       /* white text for contrast */
   font-size: 18px;
   transition: color 0.3s;
 }
